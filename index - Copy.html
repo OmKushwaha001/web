@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Voting System</h1>
+
+    <div class="vote-box">
+      <h2>Vote for Your Favorite Candidate</h2>
+
+      <div class="candidate">
+        <p>Candidate 1: <strong>Rahul Sharma</strong></p>
+        <button onclick="vote('Rahul Sharma')">Vote</button>
+      </div>
+
+      <div class="candidate">
+        <p>Candidate 2: <strong>Pooja Verma</strong></p>
+        <button onclick="vote('Pooja Verma')">Vote</button>
+      </div>
+
+      <div class="candidate">
+        <p>Candidate 3: <strong>Aman Singh</strong></p>
+        <button onclick="vote('Aman Singh')">Vote</button>
+      </div>
+    </div>
+
+    <div class="result-box">
+      <h2>Voting Results</h2>
+      <p id="result1">Rahul Sharma: 0 votes</p>
+      <p id="result2">Pooja Verma: 0 votes</p>
+      <p id="result3">Aman Singh: 0 votes</p>
+      <p id="total">Total Votes: 0</p>
+      <button onclick="resetVotes()">Reset All Votes</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
